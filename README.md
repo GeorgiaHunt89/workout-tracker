@@ -7,8 +7,8 @@
 - [Usage Information](#usage-information)
 - [Application Walk-through Video](#Application-Walk-through-Video)
 - [Contributors](#contributors)
-- [Test Instructions](#test-instructions)
 - [Deployment Link](#deployment-link)
+- [Created With](#created-with)
 - [Questions](#questions)
 - [License](#license)
 
@@ -28,7 +28,7 @@ This application provides the user with quick and easy access to track their dai
 
 Walkthrough video demonstrating how to open the application running in the browser through localhost:3001 <br>
 
-- [Workout Tracker Walkthrough Gif]()
+- [Workout Tracker Walkthrough Gif](https://github.com/GeorgiaHunt89/workout-tracker/blob/main/Images/Workout-Tracker-Gif.gif?raw=true)
 
 ## Contributors
 
