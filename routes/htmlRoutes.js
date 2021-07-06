@@ -7,6 +7,11 @@ router.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
+// Get route index.html
+router.get("/workouts", function (req, res) {
+  res.sendFile(path.join(__dirname, "../public/workouts.html"));
+});
+
 // Get route for exercise
 router.get("/exercise", function (req, res) {
   res.sendFile(path.join(__dirname, "../public/exercise.html"));
