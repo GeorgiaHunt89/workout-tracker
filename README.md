@@ -28,15 +28,15 @@ This application provides the user with quick and easy access to track their dai
 
 Walkthrough video demonstrating how to open the application running in the browser through localhost:3001 <br>
 
-- [Workout Tracker Walkthrough Gif](https://github.com/GeorgiaHunt89/workout-tracker/blob/main/Images/Workout-Tracker-Gif.gif?raw=true)
+- ![Workout Tracker Walkthrough Gif](https://github.com/GeorgiaHunt89/workout-tracker/blob/main/Images/Workout-Tracker-Gif.gif?raw=true)
 
 ## Contributors
 
 Georgia Hunt
 
-- 💼 [portfolio](https://georgiahunt89.github.io/Georgia-Hunt-Portfolio/)
-- Github: [GeorgiaHunt89](https://github.com/GeorgiaHunt89/)
-- LinkedIn: [Georgia Hunt](https://www.linkedin.com/in/georgialhunt)
+- 💼 [Portfolio](https://georgiahunt89.github.io/Georgia-Hunt-Portfolio/)<br>
+- [GitHub](https://github.com/GeorgiaHunt89/)<br>
+- [LinkedIn](https://www.linkedin.com/in/georgialhunt)
 
 ## Deployment Link
 
