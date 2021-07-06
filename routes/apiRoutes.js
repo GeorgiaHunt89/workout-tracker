@@ -1,14 +1,14 @@
 const router = require("express").Router();
-const workout = require("../modules");
+const workouts = require("../modules/workouts");
 
 // The `/api/workouts` endpoint
 
 router.get("/", (req, res) => {
   // find all workouts
-  workout
+  workouts
     .find({})
-    .then((dbWorkout) => {
-      res.json(dbWorkout);
+    .then((dbWorkouts) => {
+      res.json(dbWorkouts);
     })
     .catch((err) => {
       res.status(400).json(err);
@@ -18,26 +18,26 @@ router.get("/", (req, res) => {
 router.put("/api/workouts/:id", ({ body, params }, res) => {
   // find one workout by its `id` value
   console.log(body);
-  workout
+  workouts
     .findByIdAndUpdate(
       params.id,
       { $push: { exercise: body } },
       { new: true, runValidators: true }
     )
-    .then((dbWorkout) => {
-      res.json(dbWorkout);
+    .then((dbWorkouts) => {
+      res.json(dbWorkouts);
     })
     .catch((err) => {
       res.status(400).json(err);
     });
 });
 
-router.post("/", (req, res) => {
+router.post("/api/workouts", (req, res) => {
   // create a new workout
-  workout
-    .create(body)
-    .then((dbWorkout) => {
-      res.json(dbWorkout);
+  workouts
+    .create({})
+    .then((dbWorkouts) => {
+      res.json(dbWorkouts);
     })
     .catch((err) => {
       res.status(400).json(err);
@@ -46,11 +46,11 @@ router.post("/", (req, res) => {
 
 router.get("/api/workouts/range", (req, res) => {
   // find a workout by its range
-  workout
+  workouts
     .find({})
     .limit(10)
-    .then((dbWorkout) => {
-      res.json(dbWorkout);
+    .then((dbWorkouts) => {
+      res.json(dbWorkouts);
     })
     .catch((err) => {
       res.status(400).json(err);
@@ -59,7 +59,7 @@ router.get("/api/workouts/range", (req, res) => {
 
 router.delete("/api/workouts", ({ body }, res) => {
   // delete a workout
-  workout
+  workouts
     .findByIdAndRemove(body.id)
     .then(() => {
       res.json(true);
