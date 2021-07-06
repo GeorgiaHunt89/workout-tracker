@@ -16,10 +16,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Mongoose connection
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-});
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/workoutsSchema",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  }
+);
 
 // Routes required for HTML and API routes
 app.use(require("./routes/apiRoutes.js"));
