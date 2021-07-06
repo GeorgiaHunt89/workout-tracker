@@ -2,6 +2,7 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
+const compression = require("compression");
 
 // Setting up the express port
 const app = express();
@@ -9,6 +10,8 @@ const PORT = process.env.PORT || 3001;
 
 // Allowing logger use
 app.use(logger("dev"));
+
+app.use(compression());
 
 // Allowing data parsing for Express
 app.use(express.json());
