@@ -22,8 +22,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 });
 
 // Routes required for HTML and API routes
-app.use(require("routes/apiRoutes.js"));
-app.use(require("routes/htmlRoutes.js"));
+app.use(require("./routes/apiRoutes.js"));
+app.use(require("./routes/htmlRoutes.js"));
+app.use(require("./modules/workouts"));
 
 // Add listener for PORT
 app.listen(PORT, () => {
