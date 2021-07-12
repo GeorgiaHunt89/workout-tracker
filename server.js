@@ -21,7 +21,8 @@ app.use(express.static("public"));
 
 // Mongoose connection
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/workoutsSchema",
+  process.env.MONGODB_URI ||
+    "mongodb+srv://georgiahunt:Noodles2@cluster0.fppts.mongodb.net/workoutsSchema?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
